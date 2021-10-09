@@ -9,6 +9,7 @@ import ShopPage from "./pages/shoppage/shoppage";
 import Header from "./components/header/header";
 import LoginPage from "./pages/login/login";
 import CheckoutPage from "./pages/checkout/checkout";
+import Contact from "./pages/contact/contact";
 
 import { auth, createUserProfileDoc } from "./firebase/firebase.utils";
 import { onSnapshot } from "firebase/firestore";
@@ -50,6 +51,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
+          <Route exact path="/contact" component={Contact} />
           <Route exact path="/checkout" component={CheckoutPage} />
           <Route
             exact
